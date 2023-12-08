@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
 export default function TabButton(props){
     
-    return <li><button onClick={props.onSelect}>{props.children}</button></li>
+    return <li><button className={props.isSelected ? 'active' : null} onClick={props.onSelect}>{props.children}</button></li>
 }
